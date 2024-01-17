@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<meta charset="Utf-8">
+	<title> EVENTOS </title>
+	<script> 
+
+	function sobreEscribe()
+	{alert ('Enhorabuena, has conseguido pasar con el ratón por encima');}
+
+	function abrir()
+	{window.open('https://oalhuetortajar.com/', '_self');}
+
+	function colorRojo()
+	{document.getElementById('color').style.color='red';}
+
+	function colorNegro()
+	{document.getElementById('color').style.color='black';}
+	
+	</script>
+</head>
+
+
+
+<body onload="alert ('Hola buenos días has abierto mi página web')">
+
+
+<h2> Eventos de teclado </h2>
+
+<button onkeydown="alert ('Has hecho clic sobre una letras')"> DOWN </button>
+
+<br>
+<br>
+
+<button onkeypress="alert ('Has pulsado una tecla')"> PRESS </button>
+
+<br>
+<br>
+
+<button onkeyup="alert ('Has levantado una tecla')"> UP </button>
+
+<br>
+<br>
+
+<h2> Eventos de ratón </h2>
+
+<p onclick="alert ('Has hecho un clic')"> Bienvenidos </p>
+
+<button ondblclick="alert ('Has hecho dos clics')">Haz clic</button>
+
+<p onmousedown="alert ('Has pulsado un botón del ratón')"> Pulsa el ratón </p>
+
+<p style="display:inline;" onmousemove="alert ('Has movido el ratón dentro del área del elemento')"> Mueve el ratón por encima </p>
+
+<p onmouseout="alert ('Has movido el ratón fuera del área del elemento')"> Mueve el ratón fuera </p>
+
+<h4 style="display:inline;" onmouseover="sobreEscribe()">Pasa por encima</h4>
+
+<h4 onmouseup="alert ('Has levantado el botón del ratón')"> Levanta el dedo del ratón </h4>
+
+<br>
+
+<button onclick="abrir()"> Ir a OAL </button>
+
+<br>
+
+<h1 id="color"> Esto cambia de color </h1>
+<button onmouseover="colorRojo()" onmouseout="colorNegro()"> Cambiar </button>
+</body>
+
+</html>
